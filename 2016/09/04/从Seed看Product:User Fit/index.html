@@ -1,0 +1,629 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="抱住用户的产品设计," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="这次说说Seed
+P/U fit我觉得产品分析有一个核心点在于Product / User fit或Product / Market fit，之前也看了许多产品分析报告，也按流程写了一些，但感觉一些产品分析报告确实目标用户、功能逻辑都写了，还是缺少点什么。看了小红书产品分析之后，认真了解到分析产品时产品功能必须牢牢结合用户需求来说，如果分离开，只是功能的简单描述，在产品设计方面提高不大。产品归根结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从Seed看Product/User Fit">
+<meta property="og:url" content="http://www.heartdance.xyz/2016/09/04/从Seed看Product:User Fit/index.html">
+<meta property="og:site_name" content="In Life We Trust">
+<meta property="og:description" content="这次说说Seed
+P/U fit我觉得产品分析有一个核心点在于Product / User fit或Product / Market fit，之前也看了许多产品分析报告，也按流程写了一些，但感觉一些产品分析报告确实目标用户、功能逻辑都写了，还是缺少点什么。看了小红书产品分析之后，认真了解到分析产品时产品功能必须牢牢结合用户需求来说，如果分离开，只是功能的简单描述，在产品设计方面提高不大。产品归根结">
+<meta property="og:image" content="http://imglf1.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtMERZblRtSlNYUzJrNzFQQTdua28zV1pmME5VdkZBbkRBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+<meta property="og:image" content="http://imglf0.nosdn.127.net/img/c2VOK0U5YVV3cDVGREZqQm1JeVBhbU00ZlBvUUcwVVNPc2hra1ErUk5BL2pqTG5XckRxQm1BPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+<meta property="og:image" content="http://imglf.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtd0dtWEFqR0cwMXRLd2F4QnV3K2pBcVFvWUtMVHoxOEFRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+<meta property="og:image" content="http://imglf.nosdn.127.net/img/c2VOK0U5YVV3cDcxQXArc3dIOVZld2QrSW1FdVJqcFo2UVdFMUM4THAxelFKVWZLTzFxWHlRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+<meta property="og:image" content="http://imglf1.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdteVU3U21tdllRMSt1UHJHKzRrNk1QU0ZtWHBmcURJWXFBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+<meta property="og:image" content="http://imglf1.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtMGVXY0lIemFzQzRYOWthRmlGaWlOOHA4L0FOeXhBbTNBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+<meta property="og:image" content="http://imglf.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtelNDK2VWZHd1WWZPMnRNd2pWQ1ZUUW5MOEZ5aHJxWi9BPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+<meta property="og:updated_time" content="2016-09-08T12:13:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="从Seed看Product/User Fit">
+<meta name="twitter:description" content="这次说说Seed
+P/U fit我觉得产品分析有一个核心点在于Product / User fit或Product / Market fit，之前也看了许多产品分析报告，也按流程写了一些，但感觉一些产品分析报告确实目标用户、功能逻辑都写了，还是缺少点什么。看了小红书产品分析之后，认真了解到分析产品时产品功能必须牢牢结合用户需求来说，如果分离开，只是功能的简单描述，在产品设计方面提高不大。产品归根结">
+<meta name="twitter:image" content="http://imglf1.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtMERZblRtSlNYUzJrNzFQQTdua28zV1pmME5VdkZBbkRBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.heartdance.xyz/2016/09/04/从Seed看Product:User Fit/"/>
+
+  <title> 从Seed看Product/User Fit | In Life We Trust </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">In Life We Trust</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-coursera">
+          <a href="/Coursera" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            menu.coursera
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                从Seed看Product/User Fit
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-09-04T18:15:55+08:00" content="2016-09-04">
+              2016-09-04
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这次说说Seed<br><img src="http://imglf1.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtMERZblRtSlNYUzJrNzFQQTdua28zV1pmME5VdkZBbkRBPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt="Seed"></p>
+<h2 id="P-U-fit"><a href="#P-U-fit" class="headerlink" title="P/U fit"></a>P/U fit</h2><p>我觉得产品分析有一个核心点在于Product / User fit或Product / Market fit，之前也看了许多产品分析报告，也按流程写了一些，但感觉一些产品分析报告确实目标用户、功能逻辑都写了，还是缺少点什么。看了<a href="http://www.jianshu.com/p/5545eff2c49f" target="_blank" rel="external">小红书产品分析</a>之后，认真了解到分析产品时产品功能必须牢牢结合用户需求来说，如果分离开，只是功能的简单描述，在产品设计方面提高不大。产品归根结底为用户服务，为生活服务，本文主要从P/U fit思考Seed产品设计。</p>
+<h2 id="核心用户"><a href="#核心用户" class="headerlink" title="核心用户"></a>核心用户</h2><p>在百度指数中搜索“英语杂志”等关键词，<br><a id="more"></a><br>以城市为划分，我们得到城市需求图谱<br><img src="http://imglf0.nosdn.127.net/img/c2VOK0U5YVV3cDVGREZqQm1JeVBhbU00ZlBvUUcwVVNPc2hra1ErUk5BL2pqTG5XckRxQm1BPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt=""><br>可以看出对于英语杂志阅读需求来说，主要城市还是大城市：北京、广州、上海。这些城市中有英语杂志阅读需求的人的特点：<br>1.因为英语能力强的人的阅读源更广，更为专业化，所以用户知识水平高，但英语能力偏弱。<br>2.平常工作上学比较忙碌，阅读场景基于碎片化时间，杂志更好地满足碎片化阅读<br>3.因为知识水平高，碎片化阅读，所以这些用户的深层需求在于他们的关注点不仅仅是英语阅读，还有他们阅读的文章的品质内容，文章包含干货和新鲜度。<br><code>这里不由地想起跟几个小伙伴前几天闲聊时说到今日头条被APPStore中下架的事，一个小伙伴说今日头条虽然是技术驱动，但产品很烂，全是一些乱七八糟的内容。想了下，不是头条产品烂的问题，是他不属于头条的核心用户，这部分有时间详说</code><br><img src="http://imglf.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtd0dtWEFqR0cwMXRLd2F4QnV3K2pBcVFvWUtMVHoxOEFRPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt="第一次进入的标签信息集中在大城市人们感兴趣的范围"></p>
+<h2 id="产品定位"><a href="#产品定位" class="headerlink" title="产品定位"></a>产品定位</h2><p>Seed是一个个性化英语社交阅读应用，产品定位在英语原版资讯阅读。</p>
+<h2 id="抱住用户"><a href="#抱住用户" class="headerlink" title="抱住用户"></a>抱住用户</h2><p>产品定位在英语原版资讯阅读，既然是英语阅读应用，那么我们从“英语阅读”和“资讯源”两个角度切入，看看Seed怎么处理的。</p>
+<h4 id="资讯源"><a href="#资讯源" class="headerlink" title="资讯源"></a>资讯源</h4><p>既然要做英语阅读功能，那么读的东西从哪里来，怎么保证资讯源是干货和新鲜度？Seed的资讯源有两种来源方式：官方和用户。<br>官方在Seed中以Seed君形式表现，简言之就是通过运营的形式，选出符合用户偏好的英文文章，推送给用户，目前来看Seed君推送的文章都在牢牢贴合用户的范围内，精选了前沿有质量的文章。Seed君的文章大多是推送到首页，用户通过被动接收的方式获取。<img src="http://imglf.nosdn.127.net/img/c2VOK0U5YVV3cDcxQXArc3dIOVZld2QrSW1FdVJqcFo2UVdFMUM4THAxelFKVWZLTzFxWHlRPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt=""><br>用户是指用户可以添加文章，推荐文章。用户间可以通过关注好友的方式探索其阅读经历，发现新的文章。这里用户发现文章的过程是主动发现的过程，即路径为看到感兴趣的文章 -&gt; 查看用户 -&gt; 关注该用户 -&gt; 发现该用户的其他文章。</p>
+<h4 id="英语阅读"><a href="#英语阅读" class="headerlink" title="英语阅读"></a>英语阅读</h4><p>因为是英语阅读，是中国人的英语阅读。我们可以把阅读分为三个状态：阅读前、阅读中、阅读后。<br><em>阅读前</em><br>通常我们在读一篇中文文章时，首先会看标题或者扫一遍，看看对文章是否感兴趣才决定会不会看，这是我们的阅读习惯。但在英语里，因为我们母语不是英语，且英语偏弱，通篇看过去不知道文章大致内容，找不到自己的兴趣点，会跟文章产生距离感，没有兴趣就没有读下去的欲望，除了高中必须要做的英语阅读之外很少看英语资讯。<br>Seed通过两种方式解决这个问题：</p>
+<ol>
+<li>查看关键信息。Seed提供的关键信息包括相关人物和相关机构，这里使用的是对用户来说十分亲切的中文，在阅读前看关键信息，拉近与文章的距离，使用户产生读的欲望。<br><img src="http://imglf1.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdteVU3U21tdllRMSt1UHJHKzRrNk1QU0ZtWHBmcURJWXFBPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt="关键信息"></li>
+<li>评论。首页的信息结构中评论与文章整合在一起，左右滑动可以查看评论。起到阅读前总览，产生兴趣点和提供进入其他用户界面的入口。<br><img src="http://imglf1.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtMGVXY0lIemFzQzRYOWthRmlGaWlOOHA4L0FOeXhBbTNBPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt="首页评论可以左右滑动"><br><em>阅读中</em><br>Seed中采用了点击单词即可进行翻译的交互方式。我非常喜欢这种方式，想起之前使用过一个英语阅读软件，点击文章中单词出现复制和翻译两个选项，选择翻译才能进行翻译。我觉得很多余，用户进行复制是为了什么？复制单词 -&gt; 粘贴到词典 -&gt; 翻译。直接简化用户操作路径，一指直接翻译是阅读陌生语言的需求，也是最为重要的一个。在移动设备屏幕限制，手势限制的情况下，对需求的判断尤为重要，我想到百度、京东阅读的点击滑动直接划线的手势，不同的阅读内容需求优先级不同，Seed主要面对英语，这里点击翻译方式贴合场景。<br><em>阅读后</em><br>用户阅读后有阅读历史，但Seed中阅读历史可以删除。<br>这里我暂时想到两点：<br>1.用户看完一篇文章后觉得好但忘记收藏，阅读历史起到收藏的作用。目前Seed里用户的阅读量整体偏少，单独记录阅读历史并可以删除简化用户收藏一篇文章的流程。<br>2.因为阅读历史在个人页中，Seed定位在社交阅读，所以对于用户间阅读历史是透明的，在主动发现中不仅通过收藏、推荐的方法，还可以通过阅读历史的方法。这里阅读历史透明度高，个人需要对阅读历史的掌控要增强，所以提供删除功能。<br><img src="http://imglf.nosdn.127.net/img/c2VOK0U5YVV3cDZxRkVoTnFqVUdtelNDK2VWZHd1WWZPMnRNd2pWQ1ZUUW5MOEZ5aHJxWi9BPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt="个人页包含阅读历史"><h2 id="批判性思考"><a href="#批判性思考" class="headerlink" title="批判性思考"></a>批判性思考</h2>从现在的Seed来看，主要还是依靠Seed君的推送作为阅读社区的生产者。让我们对这种方式进行SWOT分析：<br>S: 保证文章的高质量，维持社区阅读的中心点，保证核心用户不流失。<br>W: 需要考虑运营成本。<br>O: 从阅读开始，将社区养起来，形成包含高品质，新鲜感充足的阅读社区，形成生态圈，提高用户忠诚度。<br>T: 低门槛进入意味着文章质量把控风险高。激励用户高质量的评论、推荐文章、贡献社区内容的模式暂时没有形成，当豆瓣、腾讯等拥有大量用户和资源挤入时，竞争优势不明显。<br>这里分析还是很务虚的。不过目前来看，英语资讯阅读需求目标用户利用碎片化时间进行手机阅读，每次阅读时间较短，频度偏低，这里的设计基本能够满足这些用户。</li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/抱住用户的产品设计/" rel="tag">#抱住用户的产品设计</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/01/从“我的天气”看基于用户心智模型的设计/" rel="next" title="从“我的天气”看基于用户心智模型的设计">
+                <i class="fa fa-chevron-left"></i> 从“我的天气”看基于用户心智模型的设计
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/04/为什么做产品？/" rel="prev" title="为什么做产品？">
+                为什么做产品？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Karbo" />
+          <p class="site-author-name" itemprop="name">Karbo</p>
+          <p class="site-description motion-element" itemprop="description">Do Product/Coding</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Gyczero" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/NLplayer" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/Orangekua/" target="_blank" title="douban">
+                  
+                    <i class="fa fa-fw fa-douban"></i>
+                  
+                  douban
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#P-U-fit"><span class="nav-number">1.</span> <span class="nav-text">P/U fit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核心用户"><span class="nav-number">2.</span> <span class="nav-text">核心用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#产品定位"><span class="nav-number">3.</span> <span class="nav-text">产品定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抱住用户"><span class="nav-number">4.</span> <span class="nav-text">抱住用户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#资讯源"><span class="nav-number">4.0.1.</span> <span class="nav-text">资讯源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#英语阅读"><span class="nav-number">4.0.2.</span> <span class="nav-text">英语阅读</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#批判性思考"><span class="nav-number">5.</span> <span class="nav-text">批判性思考</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Karbo</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
